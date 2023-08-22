@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h5>Student Below 20</h5>
+<table border="1">
+
+    <tr>
+        <td>NO</td>
+        <td>Name</td>
+        <td>AGE</td>
+    </tr>
+    {% for i in  abu1 %}
+    <tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{i.name}}</td>
+        <td>{{i.age}}</td>
+    </tr>
+    {% endfor %}
+</table>
+<h5>Student Above 20(including 20)</h5>
+<table border="1">
+
+    <tr>
+        <td>NO</td>
+        <td>Name</td>
+        <td>AGE</td>
+    </tr>
+    {% for i in abu %}
+    <tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{i.name}}</td>
+        <td>{{i.age}}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+
+
+</body>
+</html>
